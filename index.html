@@ -23,6 +23,114 @@
 
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
+<style>
+  /* Global optimizations */
+  body {
+    font-family: 'Roboto Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Navbar */
+  .navbar-dark .navbar-brand {
+    font-size: 1.8rem;
+    color: #c9a575;
+  }
+
+  .navbar-dark .nav-link {
+    color: #ababab;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navbar-dark .nav-link:hover {
+    color: #c9a575;
+  }
+
+  /* Section Styling */
+  .section {
+    padding: 60px 0;
+  }
+
+  .section.bg-light {
+    background-color: #f8f9fa;
+  }
+
+  .section.overlay {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* SVG Image Styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Optimize lazy loading for all images */
+  img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  img[loading="lazy"].loaded {
+    opacity: 1;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    background-color: #c9a575;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #a08963;
+  }
+
+  /* Footer */
+  .footer-section {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .footer-section a {
+    color: #c9a575;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  /* Lazy Loading Fix */
+  .lazyload {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  .lazyload.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s, transform 0.3s;
+  }
+
+  /* Preloading SVG */
+  .preloaded-svg {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+</style>
 </head>
 
 <body data-spy="scroll" data-target="#templateux-navbar" data-offset="200">
